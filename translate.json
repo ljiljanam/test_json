@@ -1,4 +1,5 @@
-cription": "Transcribe the provided mRNA into a peptide",
+{
+  "description": "Transcribe the provided mRNA into a peptide",
   "stdout": "translate.log",
   "sbg:project": "mmattioni/dna2protein",
   "cwlVersion": "sbg:draft-2",
