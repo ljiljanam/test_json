@@ -1,0 +1,218 @@
+{
+  "class": "Workflow",
+  "steps": [
+    {
+      "id": "#grep",
+      "run": {
+        "stdout": "out.txt",
+        "sbg:sbgMaintained": false,
+        "sbg:job": {
+          "inputs": {
+            "filein": {
+              "path": "/path/to/filein.ext",
+              "class": "File",
+              "size": 0,
+              "secondaryFiles": []
+            },
+            "pattern": "pattern"
+          },
+          "allocatedResources": {
+            "mem": 1000,
+            "cpu": 1
+          }
+        },
+        "description": "",
+        "outputs": [
+          {
+            "outputBinding": {
+              "glob": "*.txt"
+            },
+            "id": "#outfile",
+            "type": [
+              "null",
+              "File"
+            ]
+          }
+        ],
+        "sbg:revision": 1,
+        "temporaryFailCodes": [],
+        "sbg:validationErrors": [],
+        "sbg:contributors": [
+          "cgc_oa"
+        ],
+        "baseCommand": [
+          "grep"
+        ],
+        "sbg:id": "cgc_oa/matic-test-18-jan-2016/grep/1",
+        "sbg:project": "cgc_oa/matic-test-18-jan-2016",
+        "requirements": [],
+        "stdin": "",
+        "arguments": [],
+        "inputs": [
+          {
+            "inputBinding": {
+              "sbg:cmdInclude": true,
+              "separate": true
+            },
+            "id": "#pattern",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "inputBinding": {
+              "sbg:cmdInclude": true,
+              "separate": true
+            },
+            "id": "#filein",
+            "type": [
+              "null",
+              "File"
+            ]
+          }
+        ],
+        "sbg:latestRevision": 1,
+        "sbg:revisionsInfo": [
+          {
+            "sbg:revision": 0,
+            "sbg:modifiedBy": "cgc_oa",
+            "sbg:modifiedOn": 1453113721
+          },
+          {
+            "sbg:revision": 1,
+            "sbg:modifiedBy": "cgc_oa",
+            "sbg:modifiedOn": 1453113767
+          }
+        ],
+        "sbg:createdBy": "cgc_oa",
+        "hints": [
+          {
+            "class": "sbg:CPURequirement",
+            "value": 1
+          },
+          {
+            "class": "sbg:MemRequirement",
+            "value": 1000
+          },
+          {
+            "class": "DockerRequirement",
+            "dockerImageId": "",
+            "dockerPull": "ubuntu:latest"
+          }
+        ],
+        "successCodes": [
+          0,
+          1
+        ],
+        "sbg:modifiedOn": 1453113767,
+        "class": "CommandLineTool",
+        "sbg:cmdPreview": "grep  > out.txt",
+        "label": "grep",
+        "sbg:createdOn": 1453113721,
+        "id": "https://cgc-api.sbgenomics.com/cgc_oa/matic-test-18-jan-2016/grep/1/raw/",
+        "sbg:modifiedBy": "cgc_oa"
+      },
+      "inputs": [
+        {
+          "id": "#grep.pattern",
+          "source": [
+            "#pattern"
+          ]
+        },
+        {
+          "id": "#grep.filein",
+          "source": [
+            "#filein"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "id": "#grep.outfile"
+        }
+      ],
+      "sbg:x": 547,
+      "sbg:y": 300
+    }
+  ],
+  "requirements": [],
+  "inputs": [
+    {
+      "inputBinding": {
+        "sbg:cmdInclude": true,
+        "separate": true
+      },
+      "id": "#pattern",
+      "type": [
+        "null",
+        "string"
+      ],
+      "sbg:suggestedValue": "len"
+    },
+    {
+      "sbg:x": 109,
+      "id": "#filein",
+      "type": [
+        "null",
+        "File"
+      ],
+      "sbg:y": 145,
+      "label": "filein"
+    }
+  ],
+  "outputs": [
+    {
+      "sbg:x": 982,
+      "sbg:includeInPorts": true,
+      "sbg:y": 387,
+      "id": "#outfile",
+      "type": [
+        "null",
+        "File"
+      ],
+      "label": "outfile",
+      "source": [
+        "#grep.outfile"
+      ]
+    }
+  ],
+  "sbg:canvas_x": 0,
+  "sbg:sbgMaintained": false,
+  "sbg:canvas_zoom": 1,
+  "sbg:validationErrors": [],
+  "sbg:contributors": [
+    "cgc_oa"
+  ],
+  "sbg:createdOn": 1453114075,
+  "sbg:id": "cgc_oa/matic-test-18-jan-2016/matic-18-jan-2016/2",
+  "sbg:latestRevision": 2,
+  "sbg:revisionsInfo": [
+    {
+      "sbg:revision": 0,
+      "sbg:modifiedBy": "cgc_oa",
+      "sbg:modifiedOn": 1453114075
+    },
+    {
+      "sbg:revision": 1,
+      "sbg:modifiedBy": "cgc_oa",
+      "sbg:modifiedOn": 1453114154
+    },
+    {
+      "sbg:revision": 2,
+      "sbg:modifiedBy": "cgc_oa",
+      "sbg:modifiedOn": 1453114160
+    }
+  ],
+  "sbg:createdBy": "cgc_oa",
+  "sbg:modifiedOn": 1453114160,
+  "sbg:revision": 2,
+  "sbg:project": "cgc_oa/matic-test-18-jan-2016",
+  "sbg:modifiedBy": "cgc_oa",
+  "sbg:canvas_y": 0,
+  "id": "cgc_oa/matic-test-18-jan-2016/matic-18-jan-2016/2",
+  "label": "matic 18 jan 2016",
+  "description": "",
+  "hints": []
+}
+}}}
